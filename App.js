@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Task from './components/Task';
 import { StyleSheet, Text,ScrollView, Alert, View, KeyboardAvoidingView, Platform, TextInput, TouchableOpacity, Keyboard } from 'react-native';
+import tw from 'tailwind-react-native-classnames';
 
 export default function App() {
   const [task, setTask] = useState();
@@ -29,7 +30,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.taskWrapper}></View>
-      <Text style={styles.sectionTitle}>Today's tasks</Text>
+      <Text style={tw`p-4 android:pt-2 font-medium text-4xl text-center`}>Today's tasks</Text>
       <ScrollView style={styles.items}>
         {
           taskItems.map((item, index) =>{
