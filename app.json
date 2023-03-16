@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b0072347-5386-459f-a5b8-28b8d022bf6f"
+      }
+    },
+    "owner": "alifertah"
   }
 }
